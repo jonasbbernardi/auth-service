@@ -62,8 +62,8 @@ Os campos **secret** e **scopes** (escopo) são opcionais para o método `GET /t
 
 ```json
 {
-  "client": "String com sigla de identificação do cliente solicitando token. Ex: sir (Siresp)",
-  "product": "String com sigla de identificação do produto solicitando token. Ex: r3",
+  "client": "String com sigla de identificação do cliente solicitando token. Ex: con (Contoso)",
+  "product": "String com sigla de identificação do produto solicitando token. Ex: p1",
   "secret": "String contendo chave (hash) de identificação do cliente/produto.",
   "scopes": [
     "Lista de strings que contém as siglas dos serviços que serão acessados com o token gerado.",
@@ -132,7 +132,7 @@ Para a substituição:
 - Instale o pacote correto e desinstale o que não estiver sendo usado.
   - Ex: `npm install bcrypt && npm uninstall bcryptjs`.
 - No arquivo `Dockerfile` faça as alterações pertinentes (linhas comentadas)
-- No arquivo `crypt.services.js` faça as alterações pertinentes* (linhas comentadas).
+- No arquivo `src/services/crypt.service.js` faça as alterações pertinentes* (linhas comentadas).
 
 \* _Não esquecer de comentar a linha do pacote que não estiver sendo utilizado._
 
